@@ -50,13 +50,6 @@
     display: flex;
     flex-wrap: wrap;
 }
-.titulo_inicial{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: .5rm;
-}
 .parrafo{
     text-align: justify;
     display: inline-block;
@@ -107,10 +100,7 @@
     .submenu, .menu{
         font-size: 15px;
     }
-    #check{
-        display: none;
-    }
-    label{
+    label, .fas{
         visibility: visible;
         color: #ffff;
         position: fixed;
@@ -133,10 +123,11 @@
         flex-flow: column wrap;
         overflow: hidden;
     } 
-    nav{
+    .navegacion{
         background: rgba(0, 0, 0, 0.465);
     }
     nav ul li{
+        text-align: left;
         width: 100%;
         border-bottom: #ffff 4px ;
     }
@@ -154,10 +145,10 @@
     position: absolute;
     visibility: hidden;
     opacity: 0;
+
     } 
 
     .submenu li a {
-    margin: inherit;
     display: block;
     padding: 15px 0px 15px 5px;
     color: #ffff;
