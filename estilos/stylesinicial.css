@@ -1,4 +1,3 @@
-
 body{
     font-family: Arial;
 }
@@ -80,7 +79,6 @@ header{
     background-attachment: fixed;
     position: relative;
 }
-
 header .textos-header{
     position: static;
     display: flex;

@@ -59,7 +59,6 @@ label{
     text-align: center;
     transition: all .4s ease;
 }
-
 /* hearder */
 
 header{
@@ -220,7 +219,6 @@ main .sobre-nosotros{
 .imagen-port:hover .hover-galeria{
     transform: scale(0);
 }
-
 
 /* clients */
 .cards{
