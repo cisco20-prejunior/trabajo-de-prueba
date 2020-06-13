@@ -1,7 +1,14 @@
-
 body{
     font-family: Arial;
 }
+
+#check{
+    display: none;
+}
+label{   
+    visibility: hidden;
+}
+
 /* imagenes */
 img{
     border-radius: 60px;
@@ -10,8 +17,7 @@ img{
 .navegacion{
     width: 100%;
     text-align: right;
-    padding-top: 15px;
-    padding-right: 20px;
+    margin-right: 2px;
 }
 .navegacion ul{
     list-style: none;
@@ -59,11 +65,9 @@ img{
     opacity: 1;
 }
 /* header */
-/* hearder */
-
-header{
+.header{
     width: 100%;
-    height: 600px;
+    height: 100vh;
     background: #8360c3;  
     /* fallback for old browsers */  
     /* Chrome 10-25, Safari 5.1-6 */
@@ -73,29 +77,16 @@ header{
     background-attachment: fixed;
     position: relative;
 }
-.contenedor{
-    padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-}
 header .textos-header{
-    position: static;
+    position: relative;
     display: flex;
     height: 430px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-
+    
 }
-.textos-header{
-    position: relative;
-    padding: 0;
-    margin: auto;
-}
-
 .textos-header h1{
     font-size: 50px;
     color: white
@@ -107,76 +98,19 @@ header .textos-header{
     font-weight: 300px ;
 }
 
-.titulo{
-    color: #642a73;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 60px;
-}
 /* portada */
 .wave{
     position: absolute;
     bottom: 0;
     width: 100%;
 }
-
-/* secundaria profesores */
-.primaria__prof1{
-    display: flex;
-}
-.primaria__prof2{
-    display: flex;
-}
-.primaria__parrafo{
-    display: block;
-    width: 300px;
-    height: 200px;
-}
-
-.primaria__bloque1{
-    float: left;
-    width: 50%;
-    display: block;
-    background: linear-gradient(to left, hsl(0, 0%, 100%), hsl(193, 21%, 87%)); 
-    
-}
-.primaria__bloque2{
-    width: 50%;
-    float: right;
-    display: block;
-   
-    background: linear-gradient(to right, hsl(0, 0%, 100%), hsl(193, 21%, 87%));  
-}
-.primaria__imagen1{
-    display: block;
-}
-.titulo__primaria{
-    display: block;
+.titulo_inicial{
+    display: inline-block;
+    width: 100%;
     text-align: center;
+    font-size: 50px;
+    margin-bottom: .5rm;
 }
-.titulo__primaria1{
-    display: block;
-    text-align: center;
-} 
-/* primaria titulos */
-.primaria{
-    display: inline;
-    text-align: center;
-    -webkit-margin-before: 100px;
-            margin-block-start: 100px;
-}
-.primaria__titulo{
-    padding: 20px;
-    color: rgba(85, 35, 35, 0.746);
-    display: block;
-    background: white;
-    font-size: 30px;
-    font-weight: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    border: rgb(144, 84, 74) solid 3px;
-    
-}  
-
 /* el numerito ese */
 span{
     background: #4d0686;
@@ -229,4 +163,3 @@ footer{
     margin: 20px 0 0 0;
     color: #cdd5d9;
 }
-

@@ -1,3 +1,4 @@
+
 body{
     font-family: Arial;
 }
@@ -31,7 +32,7 @@ img{
 }
 .menu > li > a {
     display: block;
-    padding: 20px 15px;
+    padding-left: 20px;
     color: #ffff;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
