@@ -63,6 +63,12 @@
     text-align: center;
     font-size: 30px;
 }
+.titulo_primaria{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
 .titulo{
     display: inline-block;
     width: 100%;
