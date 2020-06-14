@@ -100,91 +100,19 @@
                             "p8";
     }
     section{
-        margin-top: 1em;
-        overflow: hidden;
+        margin-top: 2em;
     }
     img{
-        width: 50%;
-        height: 80%;
+        width: 40%;
+        height: calc(80% + 32px);
     }
-}
-@media screen and (orientation: portrait){
     /* menu */
     .submenu, .menu{
-      font-size: 15px;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-    .fas{
-      visibility: visible;
-      color: black;
-      position: fixed;
-      z-index: 20;
-      width: 100%;
-      font-size: 40px;
-      padding: 10px;
-      background: rgb(235, 233, 233);
-  }
-  .navegacion{
-        transition:  ease .2s all;
-        visibility: hidden;
-        z-index: 20;
-        margin-top: 60px;
-        max-width: 0;
-        height: 100%;
-        text-align: left;
-        position: fixed;
-        display: flex;
-        flex-flow: column wrap;
-        overflow: hidden;
-        color: black;
-        font-size: 1.3em;
-        background: rgb(235, 233, 233);
-  } 
-  .item{
-      width: 100%;
-  }
-  .menu .item a{
-      font-size: 1.3em;
-      color: black;
-      text-align: left;
-      border-bottom: black 4px ;
-  }
-  #check:checked ~ .navegacion{
-      visibility: visible;
-      max-width: 50%;
-      height: 100%;
-  }
-  /* submenu */
-  .submenu{
-  padding-left: 10px;
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  transition: all .2s ease-in-out;
-  } 
-  .submenu .sub_item a {
-  display: block;
-  padding: 15px 0px 15px 5px;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  text-align: left;
-  }
-  .menu li:hover .submenu{
-  visibility: visible;
-  opacity: 1;
-  display: block;
-  position: relative;
-  }  
-}
-@media screen and (max-width: 620px){
-       /* menu */
-       .submenu, .menu{
         font-size: 15px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-      .fas{
+    .navegacion_contenedor #label{
         visibility: visible;
+        display: block;
         color: black;
         position: fixed;
         z-index: 20;
@@ -193,24 +121,25 @@
         padding: 10px;
         background: rgb(235, 233, 233);
     }
-    .navegacion{
-        transition:  ease .2s all;
+    .navegacion_contenedor .navegacion{
+        transition: ease .2s all;
         visibility: hidden;
         z-index: 20;
-        margin-top: 60px;
         max-width: 0;
         height: 100%;
-        text-align: left;
         position: fixed;
         display: flex;
         flex-flow: column wrap;
         overflow: hidden;
         color: black;
         font-size: 1.3em;
-        background: rgb(235, 233, 233);
-    } 
+        background-color: rgb(235, 233, 233);
+        margin-top: 50px;
+    }
     .item{
         width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
     .menu .item a{
         font-size: 1.3em;
@@ -221,7 +150,6 @@
     #check:checked ~ .navegacion{
         visibility: visible;
         max-width: 50%;
-        height: 100%;
     }
     /* submenu */
     .submenu{
@@ -238,6 +166,7 @@
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     text-align: left;
+    background-color: rgb(235, 233, 233);
     }
     .menu li:hover .submenu{
     visibility: visible;
@@ -246,12 +175,10 @@
     position: relative;
     }  
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 540px){
     #check:checked ~ .navegacion{
         visibility: visible;
-        max-width: 100%;
-        width: 100%;
-        height: 100%;
+        max-width:  100%;
     }
     .textos-header h1{
         font-size: 35px;
@@ -306,5 +233,6 @@
     .titulo-final{
         font-size: 20px;
     }
+
 
 }
