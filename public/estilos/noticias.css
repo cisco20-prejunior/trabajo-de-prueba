@@ -1,0 +1,177 @@
+#check {
+	display: none;
+}
+#label {
+	display: none;
+}
+img {
+	border-radius: 20%;
+}
+.navegacion {
+	width: 100%;
+	text-align: left;
+	position: fixed;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	z-index: 100;
+	background-color: white;
+	border-bottom: solid rgb(223, 223, 223) 0.5px;
+}
+.navegacion ul {
+	list-style: none;
+}
+.menu {
+	text-align: right;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	margin-right: 50px;
+}
+.menu > li {
+	position: relative;
+	display: inline-block;
+}
+.menu > li > a {
+	display: block;
+	margin: 10px 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	transition: all 0.2s ease;
+	color: black;
+	font-size: 20px;
+}
+.menu li a:hover {
+	color: rgb(199, 16, 16);
+}
+.fa-chevron-down {
+	font-size: 15px;
+	color: rgb(199, 16, 16);
+}
+/* submenu */
+.submenu {
+	padding-left: 10px;
+	position: absolute;
+	opacity: 0;
+	background-color: white;
+	width: 100%;
+	font-size: 15px;
+	visibility: hidden;
+	z-index: 10;
+	padding: 0;
+}
+.submenu .sub_item a {
+	padding: 1em;
+	color: #ffff;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	text-align: left;
+	transition: all 0.2s;
+	color: black;
+	display: block;
+}
+.menu li:hover .submenu {
+	visibility: visible;
+	opacity: 1;
+}
+.submenu .sub_item a:hover {
+	background-color: black;
+	color: white;
+}
+body {
+	font-family: Arial;
+}
+
+.contenedor {
+	padding: 60px 0;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.titulo {
+	color: #642a73;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+/* hearder */
+
+header {
+	width: 100%;
+	height: 600px;
+	/* fallback for old browsers */
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+			to right,
+			rgba(21, 101, 192, 0.63),
+			hsla(2, 65%, 44%, 0.63)
+		),
+		url(../imagenes/portada.jpg);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+nav {
+	text-align: right;
+	padding: 30px 50px 0 0;
+}
+
+nav > a {
+	color: #fff;
+	font-weight: 300;
+	text-decoration: none;
+	margin-right: 10px;
+	position: relative;
+}
+
+nav > a:hover {
+	text-decoration: underline;
+}
+
+header .textos-header {
+	display: flex;
+	height: 430px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.textos-header h1 {
+	font-size: 70px;
+	color: white;
+}
+
+.textos-header h2 {
+	font-size: 30px;
+	color: white;
+	font-weight: 300;
+}
+.wave {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+/* Noticias */
+.not_ind > img {
+	max-width: 70%;
+	max-height: 50%;
+	margin: auto;
+}
+.not_fran {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row: 3;
+	grid-gap: 50px;
+	justify-content: right;
+	align-content: space-around;
+}
+.not_ind {
+	display: flex;
+	flex-flow: column wrap;
+}
