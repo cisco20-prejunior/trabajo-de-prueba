@@ -1,0 +1,29 @@
+{
+	"name": "newindex",
+	"version": "1.0.0",
+	"description": "proyecto con git este es un proyecto de puesa de git",
+	"main": "index.js",
+	"scripts": {
+		"start": "node src",
+		"dev": "nodemon src"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cisco20-prejunior/trabajo-de-prueba.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/cisco20-prejunior/trabajo-de-prueba/issues"
+	},
+	"homepage": "https://github.com/cisco20-prejunior/trabajo-de-prueba#readme",
+	"dependencies": {
+		"ejs": "^3.1.3",
+		"express": "^4.17.1",
+		"morgan": "^1.10.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.4"
+	}
+}
